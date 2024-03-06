@@ -1,0 +1,141 @@
+/* ==================================== 
+       DESKTOP VARIABLES
+   ====================================
+*/
+
+:root {
+  --white-100: #ffffff;
+  --white-130: #ffffffdd;
+  --white-170: #ffffffb3;
+  --white-115: #ffffff26;
+
+  --black-900: #21222e;
+  --black-915: #21222ee5;
+
+  --blue-500: #0047ba;
+  --blue-550: #0047ba80;
+  --blue-530: #397ff24d;
+
+  --gray-700: #989a87;
+  --gray-720: #989a8733;
+  --gray-3000: #eff1f4;
+  --gray-400: #eecf93;
+}
+
+H3 {
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 84px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--black-900);
+  margin-bottom: 55px;
+}
+
+H6 {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-100);
+}
+
+.section-container {
+  width: 1656px;
+  height: 795px;
+  margin-left: 12px;
+}
+
+.inner-block {
+  padding-left: 70px;
+}
+
+.event-card {
+  width: 499px;
+  height: 515px;
+
+  border-radius: 20px;
+  background-color: var(--blue-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-card-container {
+  width: 435px;
+}
+
+.event-date {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-100);
+  margin-bottom: 32px;
+}
+
+.event-card-tags {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.event-tag {
+  height: 40px;
+  padding: 0px, 16px, 0px, 16px;
+  border-radius: 65px;
+  gap: 12px;
+  border: none;
+  background-color: var(--white-115);
+}
+
+.event-tag-text {
+  color: var(--white-100);
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 0 17px;
+}
+
+.event-card-text {
+  width: 380px;
+  margin-bottom: 100px;
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: var(--white-100);
+}
+
+.event-card-btn {
+  width: 435px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: var(--white-100);
+  color: var(--black-900);
+  border: none;
+  font-family: "Golos Text", sans-serif;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
