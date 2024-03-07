@@ -24,6 +24,9 @@
 
 body {
   background-color: var(--gray-300);
+  margin: 0 auto;
+  height: 100vh;
+  width: 105rem;
 }
 
 button {
@@ -85,7 +88,9 @@ H6 {
 .t3-spacer {
   margin-bottom: 5px;
 }
-
+.container {
+  margin: 0 auto;
+}
 .section-container {
   width: 1656px;
 
@@ -141,20 +146,36 @@ H6 {
    ====================================
 */
 .events-container {
-  height: 795px;
+  height: 49.6875rem;
 }
 .events-header {
-  width: 1590px;
+  width: 99.375rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .event-card {
-  width: 499px;
-  height: 515px;
+  width: 31.1875rem;
+  height: 32.1875rem;
   border-radius: 20px;
   cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.event-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.event-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.event-card:nth-child(3) {
+  animation-delay: 0.6s;
 }
 
 .event-card__commonbg {
@@ -176,7 +197,7 @@ H6 {
 }
 
 .event-card-container {
-  width: 435px;
+  width: 27.1875rem;
 }
 
 .event-date {
@@ -219,7 +240,7 @@ H6 {
 }
 
 .event-card-text {
-  width: 380px;
+  width: 23.75rem;
   margin-bottom: 100px;
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
@@ -242,7 +263,7 @@ H6 {
 }
 
 .event-card-btn {
-  width: 435px;
+  width: 27.1875rem;
   height: 60px;
   border-radius: 12px;
   background-color: var(--white-100);
@@ -257,8 +278,8 @@ H6 {
 }
 
 .nav-btn {
-  width: 80px;
-  height: 40px;
+  width: 5rem;
+  height: 2.5rem;
   padding: 15px, 0px, 14px, 0px;
   border-radius: 999px;
   border: none;
@@ -266,7 +287,7 @@ H6 {
 }
 
 .all-events-btn {
-  width: 1657px;
+  width: 103.5625rem;
   height: 92px;
   background-color: var(--white-100);
   border-radius: 20px;
@@ -441,4 +462,14 @@ a {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.02em;
+}
+
+/* ==================================== 
+      ANIMATIONS
+   ====================================
+*/
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
