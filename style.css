@@ -29,6 +29,15 @@ body {
 button {
   cursor: pointer;
 }
+
+H2 {
+  font-family: "Inter", sans-serif;
+  font-size: 88px;
+  font-weight: 900;
+  line-height: 84px;
+  letter-spacing: 0em;
+  margin-left: 70px;
+}
 H3 {
   font-family: "Inter", sans-serif;
   font-size: 80px;
@@ -59,11 +68,27 @@ H6 {
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--white-100);
+  margin-bottom: 35px;
+}
+
+.t3 {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white-100);
+}
+
+.t3-spacer {
+  margin-bottom: 5px;
 }
 
 .section-container {
   width: 1656px;
-  height: 795px;
+
   margin-left: 12px;
   border-radius: 20px;
 }
@@ -75,6 +100,18 @@ H6 {
   margin-bottom: 40px;
 }
 
+.section-spacer {
+  margin-bottom: 15px;
+}
+
+.btn-spacer {
+  margin-bottom: 30px;
+}
+
+.kgeu-spacer {
+  margin-bottom: 110px;
+}
+
 .bgcolor-gray__300 {
   background-color: var(--gray-300);
 }
@@ -83,11 +120,29 @@ H6 {
   background-color: var(--white-100);
 }
 
+.bgcolor-blue__500 {
+  background-color: var(--blue-500);
+}
+
+.color__white {
+  color: var(--white-100);
+}
+
+.color__black {
+  color: var(--black-900);
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 /* ==================================== 
-       EVENTS
+       МЕРОПРИЯТИЯ
    ====================================
 */
-
+.events-container {
+  height: 795px;
+}
 .events-header {
   width: 1590px;
   display: flex;
@@ -225,9 +280,13 @@ H6 {
   cursor: pointer;
 }
 /* ==================================== 
-      STUDENTS LIFE
+      СТУДЕНЧЕСКАЯ ЖИЗНЬ
    ====================================
 */
+
+.student-life-container {
+  height: 390px;
+}
 
 .student-life-block {
   display: flex;
@@ -265,18 +324,14 @@ H6 {
   text-align: left;
 }
 
-.color__white {
-  color: var(--white-100);
-}
-
-.color__black {
-  color: var(--black-900);
-}
-
 /* ==================================== 
-      ABOUT KGEU
+      ЗНАКОМСТВО
    ====================================
 */
+
+.about-kgeu-container {
+  height: 430px;
+}
 .about-kgeu-block {
   position: relative;
   display: flex;
@@ -324,4 +379,66 @@ a {
 
 .menu-item {
   margin-bottom: 25px;
+}
+
+/* ==================================== 
+      ЮБИЛЕЙ
+   ====================================
+*/
+
+.jubilee-container {
+  height: 742px;
+}
+
+.jubilee-bg {
+  background-image: url("./assests/Group.png");
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+}
+.jubilee-inner-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jubilee-text-block {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================================== 
+      ИНТЕРЕСНОЕ
+   ====================================
+*/
+.interesting-container {
+  height: 500px;
+}
+.interesting-h3-spacer {
+  margin-bottom: 70px;
+}
+.interesting-inner-block {
+  display: flex;
+}
+.interesting-card {
+  cursor: pointer;
+  /* width: 370px;
+  height: 204px; */
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.interesting-card-image-block {
+  display: flex;
+  width: 306px;
+  height: 64px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.interesting-card-text {
+  font-family: "Golos Text", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
 }
