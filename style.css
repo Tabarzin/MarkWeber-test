@@ -401,6 +401,15 @@ H6 {
   padding-left: 282px;
 }
 
+.icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover .icon {
+  opacity: 1;
+}
+
 .about-kgeu-list {
   list-style-type: none;
   text-decoration: underline;
