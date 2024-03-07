@@ -22,6 +22,10 @@
   --gray-400: #eecf93;
 }
 
+body {
+  background-color: var(--gray-300);
+}
+
 button {
   cursor: pointer;
 }
@@ -34,8 +38,16 @@ H3 {
   text-align: left;
   text-transform: uppercase;
   color: var(--black-900);
-  margin-bottom: 55px;
+
   margin-left: 70px;
+}
+
+.h3-spacer__events {
+  margin-bottom: 55px;
+}
+
+.h3-spacer__studentlife {
+  margin-bottom: 50px;
 }
 
 H6 {
@@ -53,13 +65,28 @@ H6 {
   width: 1656px;
   height: 795px;
   margin-left: 12px;
+  border-radius: 20px;
 }
 
 .inner-block {
   padding-left: 70px;
   display: flex;
   gap: 10px;
+  margin-bottom: 40px;
 }
+
+.bgcolor-gray__300 {
+  background-color: var(--gray-300);
+}
+
+.bgcolor-white__100 {
+  background-color: var(--white-100);
+}
+
+/* ==================================== 
+       EVENTS
+   ====================================
+*/
 
 .events-header {
   width: 1590px;
@@ -71,8 +98,8 @@ H6 {
 .event-card {
   width: 499px;
   height: 515px;
-
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .event-card__commonbg {
@@ -181,4 +208,120 @@ H6 {
   border-radius: 999px;
   border: none;
   background-color: var(--gray-300);
+}
+
+.all-events-btn {
+  width: 1657px;
+  height: 92px;
+  background-color: var(--white-100);
+  border-radius: 20px;
+  color: var(--black-900);
+  border: none;
+  font-family: "Golos Text", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+/* ==================================== 
+      STUDENTS LIFE
+   ====================================
+*/
+
+.student-life-block {
+  display: flex;
+}
+
+.student-life-card {
+  cursor: pointer;
+
+  width: 436px;
+  height: 124px;
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.student-life-card__blue {
+  background-color: var(--blue-500);
+}
+
+.student-life-card__white {
+  background-color: var(--white-100);
+}
+
+.student-life-card-image-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.student-life-card-text {
+  font-family: "Golos Text", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.color__white {
+  color: var(--white-100);
+}
+
+.color__black {
+  color: var(--black-900);
+}
+
+/* ==================================== 
+      ABOUT KGEU
+   ====================================
+*/
+.about-kgeu-block {
+  position: relative;
+  display: flex;
+}
+.about-kgeu__bg {
+  background-image: url("./assests/rupor.png");
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 413px;
+
+  position: absolute;
+  left: 425px;
+  top: 150px;
+}
+
+.about-kgeu-inner-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-kgeu-links {
+  font-family: "Golos Text", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+
+  color: var(--blue-500);
+  padding-top: 68px;
+  padding-left: 282px;
+}
+
+.about-kgeu-list {
+  list-style-type: none;
+  text-decoration: underline;
+  text-decoration-color: var(--blue-550);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a {
+  color: inherit;
+}
+
+.menu-item {
+  margin-bottom: 25px;
 }
