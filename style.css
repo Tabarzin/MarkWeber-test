@@ -40,6 +40,10 @@ H2 {
   line-height: 84px;
   letter-spacing: 0em;
   margin-left: 70px;
+
+  color: transparent;
+  animation: textAppearW 0.6s 1s forwards;
+  transform-origin: left;
 }
 H3 {
   font-family: "Inter", sans-serif;
@@ -49,9 +53,12 @@ H3 {
   letter-spacing: -0.04em;
   text-align: left;
   text-transform: uppercase;
-  color: var(--black-900);
 
   margin-left: 70px;
+
+  color: transparent;
+  animation: textAppear 0.5s 2s forwards;
+  transform-origin: left;
 }
 
 .h3-spacer__events {
@@ -360,6 +367,10 @@ H6 {
 .about-kgeu-block {
   position: relative;
   display: flex;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.7s ease forwards;
 }
 .about-kgeu__bg {
   background-image: url("./assests/rupor.png");
@@ -446,10 +457,12 @@ a {
 }
 .interesting-card {
   cursor: pointer;
-  /* width: 370px;
-  height: 204px; */
+
   padding: 32px;
   border-radius: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 5s ease forwards;
 }
 
 .interesting-card-image-block {
@@ -486,5 +499,29 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: var(--black-900);
+  }
+}
+
+@keyframes textAppearW {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: var(--white-100);
   }
 }
