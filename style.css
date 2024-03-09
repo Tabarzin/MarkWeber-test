@@ -25,8 +25,11 @@
 body {
   background-color: var(--gray-300);
   margin: 0 auto;
-  height: 100vh;
+
   width: 105rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -35,26 +38,26 @@ button {
 
 H2 {
   font-family: "Inter", sans-serif;
-  font-size: 88px;
+  font-size: 5.5rem;
   font-weight: 900;
-  line-height: 84px;
+  line-height: 5.25rem;
   letter-spacing: 0em;
-  margin-left: 70px;
-
+  margin-left: 4.375rem;
+  white-space: pre;
   color: transparent;
   animation: textAppearW 0.6s 1s forwards;
   transform-origin: left;
 }
 H3 {
   font-family: "Inter", sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 900;
-  line-height: 84px;
+  line-height: 5.25rem;
   letter-spacing: -0.04em;
   text-align: left;
   text-transform: uppercase;
-
-  margin-left: 70px;
+  white-space: pre;
+  margin-left: 4.375rem;
 
   color: transparent;
   animation: textAppear 0.5s 2s forwards;
@@ -62,66 +65,68 @@ H3 {
 }
 
 .h3-spacer__events {
-  margin-bottom: 55px;
+  margin-bottom: 3.4375rem;
 }
 
 .h3-spacer__studentlife {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 H6 {
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 2.375rem;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--white-100);
-  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
 }
 
 .t3 {
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--white-100);
 }
 
 .t3-spacer {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .container {
   margin: 0 auto;
 }
 .section-container {
-  width: 1656px;
+  width: 100%;
+  max-width: 1656px;
+  margin-left: auto;
+  margin-right: auto;
 
-  margin-left: 12px;
   border-radius: 20px;
 }
 
 .inner-block {
-  padding-left: 70px;
+  padding-left: 4.375rem;
   display: flex;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .section-spacer {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .btn-spacer {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .kgeu-spacer {
-  margin-bottom: 110px;
+  margin-bottom: 6.875rem;
 }
 
 .bgcolor-gray__300 {
@@ -144,7 +149,7 @@ H6 {
   color: var(--black-900);
 }
 
-.lowercase {
+.changecase {
   text-transform: lowercase;
 }
 
@@ -211,23 +216,23 @@ H6 {
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
 
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--white-100);
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .event-card-tags {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .event-tag {
-  height: 40px;
-  padding: 0px, 16px, 0px, 16px;
+  height: 2.5rem;
+  padding: 0rem, 1rem, 0rem, 1rem;
   border-radius: 65px;
   gap: 12px;
   border: none;
@@ -238,9 +243,9 @@ H6 {
   color: var(--white-100);
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: -0.02em;
   text-align: left;
   padding: 0 17px;
@@ -252,9 +257,9 @@ H6 {
   font-family: "Golos Text", sans-serif;
   font-optical-sizing: auto;
 
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 2.375rem;
   letter-spacing: -0.02em;
   text-align: left;
 
@@ -262,32 +267,32 @@ H6 {
 }
 
 .event-card-commonbg__spacer {
-  margin-bottom: 140px;
+  margin-bottom: 8.75rem;
 }
 
 .event-card-imagebg__spacer {
-  margin-bottom: 210px;
+  margin-bottom: 13.125rem;
 }
 
 .event-card-btn {
   width: 27.1875rem;
-  height: 60px;
+  height: 3.75rem;
   border-radius: 12px;
   background-color: var(--white-100);
   color: var(--black-900);
   border: none;
   font-family: "Golos Text", sans-serif;
 
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
   letter-spacing: -0.02em;
 }
 
 .nav-btn {
   width: 5rem;
   height: 2.5rem;
-  padding: 15px, 0px, 14px, 0px;
+  padding: 0.9375rem, 0rem, 0.875rem, 0rem;
   border-radius: 999px;
   border: none;
   background-color: var(--gray-300);
@@ -295,15 +300,15 @@ H6 {
 
 .all-events-btn {
   width: 103.5625rem;
-  height: 92px;
+  height: 5.75rem;
   background-color: var(--white-100);
   border-radius: 20px;
   color: var(--black-900);
   border: none;
   font-family: "Golos Text", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
   letter-spacing: -0.02em;
   cursor: pointer;
 }
@@ -313,7 +318,7 @@ H6 {
 */
 
 .student-life-container {
-  height: 390px;
+  height: 24.375rem;
 }
 
 .student-life-block {
@@ -323,9 +328,9 @@ H6 {
 .student-life-card {
   cursor: pointer;
 
-  width: 436px;
-  height: 124px;
-  padding: 32px;
+  width: 27.25rem;
+  height: 7.75rem;
+  padding: 2rem;
   border-radius: 20px;
 
   opacity: 0;
@@ -344,14 +349,14 @@ H6 {
 .student-life-card-image-block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
 }
 
 .student-life-card-text {
   font-family: "Golos Text", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
   letter-spacing: -0.02em;
   text-align: left;
 }
@@ -362,7 +367,7 @@ H6 {
 */
 
 .about-kgeu-container {
-  height: 430px;
+  height: 26.875rem;
 }
 .about-kgeu-block {
   position: relative;
@@ -375,8 +380,8 @@ H6 {
 .about-kgeu__bg {
   background-image: url("./assests/rupor.png");
   background-repeat: no-repeat;
-  width: 450px;
-  height: 413px;
+  width: 28.125rem;
+  height: 25.8125rem;
 
   position: absolute;
   left: 425px;
@@ -391,14 +396,14 @@ H6 {
 
 .about-kgeu-links {
   font-family: "Golos Text", sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 400;
-  line-height: 31px;
+  line-height: 1.9375rem;
   letter-spacing: -0.02em;
 
   color: var(--blue-500);
-  padding-top: 68px;
-  padding-left: 282px;
+  padding-top: 4.25rem;
+  padding-left: 17.625rem;
 }
 
 .icon {
@@ -423,7 +428,7 @@ a {
 }
 
 .menu-item {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 /* ==================================== 
@@ -532,5 +537,142 @@ a {
     opacity: 1;
     transform: translateX(0);
     color: var(--white-100);
+  }
+}
+
+/* ============================================================================ 
+                                     MOBILE
+==============================================================================*/
+
+@media screen and (max-width: 375px) {
+  H2 {
+    font-size: 2.625rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    letter-spacing: -0.04em;
+    margin-left: 1.375rem;
+  }
+  H3 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1.8125rem;
+    letter-spacing: -0.04em;
+    white-space: normal;
+    margin-left: 1.375rem;
+  }
+
+  .h3-mobile-spacer {
+    margin-bottom: 20px;
+  }
+
+  H6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+  }
+
+  .t3 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    letter-spacing: -0.02em;
+  }
+  /* ==================================== 
+      ЗНАКОМСТВО
+   ====================================
+*/
+
+  .about-kgeu-container {
+    width: 359px;
+    height: 461px;
+    margin-left: 8px;
+    border-radius: 12px;
+  }
+  .about-kgeu-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 22.4375rem;
+    height: 28.8125rem;
+
+    border-radius: 12px;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.7s ease forwards;
+  }
+  .about-kgeu__bg {
+    background-image: url("./assests/rupor_sm.png");
+
+    left: 154px;
+    top: 298px;
+  }
+
+  .about-kgeu-inner-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-kgeu-links {
+    font-family: "Golos Text", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    letter-spacing: -0.02em;
+
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu-item {
+    margin-bottom: 1.1rem;
+  }
+  .menu-item:hover .icon {
+    opacity: 1;
+  }
+
+  .about-kgeu-list {
+    padding-left: 11px;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* ==================================== 
+      ЮБИЛЕЙ
+   ====================================
+*/
+
+  .jubilee-container {
+    height: 742px;
+  }
+
+  .jubilee-bg {
+    background-image: url("./assests/55_sm.png");
+    background-position: 9% 6%;
+  }
+  .jubilee-inner-block {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .jubilee-text-block {
+    width: 22.4375rem;
+    height: 40.3125rem;
+
+    border-radius: 12px;
+  }
+
+  .changecase {
+    text-transform: uppercase;
   }
 }

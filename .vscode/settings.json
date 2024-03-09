@@ -1,0 +1,4 @@
+{
+  "html.format.contentUnformatted": "pre,code,textarea,h3",
+  "html.format.unformatted": "h3"
+}
